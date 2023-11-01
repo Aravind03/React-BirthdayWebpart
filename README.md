@@ -1,4 +1,4 @@
-# react-birthday-webpart
+# spfx-react-birthday-webpart
 
 ## Summary
 
@@ -22,20 +22,23 @@ microsoft-graph-toolkit ![version](https://img.shields.io/badge/version-3.1.3-gr
 
 ## Prerequisites
 
-> Any special pre-requisites?
+> Deploy the microsoft graph toolkit to the Microsoft 365 Tenant as mentioned in the below article
+> https://learn.microsoft.com/en-us/graph/toolkit/get-started/build-a-sharepoint-web-part#deploy-the-microsoft-graph-toolkit-sharepoint-framework-package
+>
+> Also, make sure the user profile properties are set as in the below article
+> https://support.shortpoint.com/support/solutions/articles/1000264659-shortpoint-people-search-upcoming-birthdays-configuration
 
 ## Solution
 
 | Solution    | Author(s)                                               |
 | ----------- | ------------------------------------------------------- |
-| folder name | Author details (name, company, twitter alias with link) |
+| SPFx React webpart | Aravind Ganesan |
 
 ## Version history
 
 | Version | Date             | Comments        |
 | ------- | ---------------- | --------------- |
-| 1.1     | March 10, 2021   | Update comment  |
-| 1.0     | January 29, 2021 | Initial release |
+| 1.0     | November 1, 2023 | Initial release |
 
 ## Disclaimer
 
@@ -45,13 +48,16 @@ microsoft-graph-toolkit ![version](https://img.shields.io/badge/version-3.1.3-gr
 
 ## Minimal Path to Awesome
 
+- Install the sharepoint graph toolkit in the Tenant
 - Clone this repository
 - Ensure that you are at the solution folder
 - in the command-line run:
   - **npm install**
-  - **gulp serve**
-
-> Include any additional steps as needed.
+  - **gulp bundle --ship**
+  - **gulp package-solution --ship**
+- Deploy the sppkg file within the App Catalog
+- Approve the API access
+- Add the webpart to the site 
 
 ## Features
 
