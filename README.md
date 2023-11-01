@@ -9,7 +9,8 @@ This React-based SPFx web part is designed to showcase employees' birthdays with
 
 ## Framework Used
 
-SharePoint Framework ![version](https://img.shields.io/badge/version-1.18.0-green.svg)
+SharePoint Framework ![version](https://img.shields.io/badge/version-1.18.0-green.svg)  NodeJS ![version](https://img.shields.io/badge/version-18.18.2-yellow.svg)
+microsoft-graph-toolkit ![version](https://img.shields.io/badge/version-3.1.3-green.svg)
 
 
 ## Applies to
