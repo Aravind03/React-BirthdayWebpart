@@ -2,13 +2,14 @@
 
 ## Summary
 
-Short summary on functionality and used technologies.
+This React-based SPFx web part is designed to showcase employees' birthdays within the organization, with birthdates sourced from their Microsoft 365 user profiles.
 
 [picture of the solution in action, if possible]
 
 ## Used SharePoint Framework Version
 
 ![version](https://img.shields.io/badge/version-1.18.0-green.svg)
+
 
 ## Applies to
 
