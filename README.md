@@ -4,7 +4,8 @@
 
 This React-based SPFx web part is designed to showcase employees' birthdays within the organization, with birthdates sourced from their Microsoft 365 user profiles.
 
-![image](https://github.com/Aravind03/React-BirthdayWebpart/assets/10475751/2e505573-5f35-45cb-b586-7810b0d64e26)
+![image](https://github.com/Aravind03/React-BirthdayWebpart/assets/10475751/5d3a1488-ef84-4cd0-a2d8-942efb1a6cdc)
+
 
 
 ## Framework Used
@@ -61,14 +62,6 @@ microsoft-graph-toolkit ![version](https://img.shields.io/badge/version-3.1.3-gr
 
 ## Features
 
-Description of the extension that expands upon high-level summary above.
-
-This extension illustrates the following concepts:
-
-- topic 1
-- topic 2
-- topic 3
-
 > Notice that better pictures and documentation will increase the sample usage and the value you are providing for others. Thanks for your submissions advance.
 
 > Share your web part with others through Microsoft 365 Patterns and Practices program to get visibility and exposure. More details on the community, open-source projects and other activities from http://aka.ms/m365pnp.
@@ -80,3 +73,8 @@ This extension illustrates the following concepts:
 - [Use Microsoft Graph in your solution](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/get-started/using-microsoft-graph-apis)
 - [Publish SharePoint Framework applications to the Marketplace](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/publish-to-marketplace-overview)
 - [Microsoft 365 Patterns and Practices](https://aka.ms/m365pnp) - Guidance, tooling, samples and open-source controls for your Microsoft 365 development
+- https://learn.microsoft.com/en-us/sharepoint/dev/spfx/set-up-your-development-environment
+- https://learn.microsoft.com/en-us/graph/toolkit/get-started/build-a-sharepoint-web-part
+- https://learn.microsoft.com/en-us/graph/toolkit/get-started/mgt-spfx#react
+- https://learn.microsoft.com/en-us/graph/toolkit/get-started/mgt-react#templates
+- https://learn.microsoft.com/en-us/graph/toolkit/components/person#microsoft-graph-permissions
