@@ -4,5 +4,6 @@ export interface IBirthdayWebPartProps {
 
 export interface IUserInformationProps {
   userPrincipalName : string;
-  birthDate : string
+  birthDate : string;
+  displayName : string;
 }

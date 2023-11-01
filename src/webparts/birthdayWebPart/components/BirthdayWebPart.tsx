@@ -5,7 +5,6 @@ import { Person } from '@microsoft/mgt-react/dist/es6/spfx';
 import { PersonCardInteraction, ViewType } from '@microsoft/mgt-spfx';
 //import { ViewType } from '@microsoft/mgt-spfx';
 import { MgtTemplateProps } from '@microsoft/mgt-react';
-
 export default class BirthdayWebPart extends React.Component<IBirthdayWebPartProps, {}> {
   public render(): React.ReactElement<IBirthdayWebPartProps> {
     
@@ -18,11 +17,15 @@ export default class BirthdayWebPart extends React.Component<IBirthdayWebPartPro
           this.props.userInformation.map((user)=>
           {
             const DisplayBirthDay = (props: MgtTemplateProps) => {
-              return <div>{user.birthDate}</div>
+              return(
+                <>
+                  <div><b>{user.birthDate}</b></div>
+                </>
+              )
             };
             return(
               <>
-                <Person personQuery={user.userPrincipalName} personCardInteraction={PersonCardInteraction.hover} view={ViewType.twolines}>
+                <Person personQuery={user.userPrincipalName} personCardInteraction={PersonCardInteraction.hover} view={ViewType.twolines} showPresence >
                   <DisplayBirthDay template='line2' />
                 </Person>
                 <br></br>

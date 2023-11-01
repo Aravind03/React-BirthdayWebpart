@@ -49,10 +49,11 @@ export default class BirthdayWebPartWebPart extends BaseClientSideWebPart<IBirth
     console.log(uri);
     let birthDate: string ;
     let userPrincipalName: string ;
+    let displayName: string ;
     const monthNames = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
     await this.getSearchResult(uri)
       .then((response) => {   
-        console.log(response);
+        //console.log(response);
         const rowCount = parseInt(response.PrimaryQueryResult.RelevantResults.RowCount);
         if(rowCount > 0)
         {
@@ -63,14 +64,18 @@ export default class BirthdayWebPartWebPart extends BaseClientSideWebPart<IBirth
               {
                 userPrincipalName = eachCell.Value.toString().replace("i:0#.f|membership|","");
               }
+              if(eachCell.Key.toString() === "Title")
+              {
+                displayName = eachCell.Value.toString();
+              }
               if(eachCell.Key.toString() === "Birthday" )
               {
                 const tempBirthday = new Date(eachCell.Value.toString());
                 birthDate = tempBirthday.getUTCDate()+" "+ monthNames[tempBirthday.getMonth()]
               }
             });
-            const userProperty: IUserInformationProps = {userPrincipalName : userPrincipalName , birthDate : birthDate};
-            console.log(userProperty.userPrincipalName+" "+ userProperty.birthDate);
+            const userProperty: IUserInformationProps = {userPrincipalName : userPrincipalName , birthDate : birthDate , displayName : displayName};
+            //console.log(userProperty.userPrincipalName+" "+ userProperty.birthDate);
             birthdayUserInformation.push(userProperty);
         });
         allBirthdayUserInformation = birthdayUserInformation;
