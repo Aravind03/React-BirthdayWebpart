@@ -6,7 +6,6 @@ import { PersonCardInteraction, ViewType } from '@microsoft/mgt-spfx';
 import { MgtTemplateProps } from '@microsoft/mgt-react';
 export default class BirthdayWebPart extends React.Component<IBirthdayWebPartProps, {}> {
   public render(): React.ReactElement<IBirthdayWebPartProps> {
-    
     return (
       <section className={`${styles.birthdayWebPart}`}>
         <>
